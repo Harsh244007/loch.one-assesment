@@ -1,0 +1,314 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body * {
+  color: white;
+  transition: all 0.2s;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+}
+#root {
+  color-scheme: dark;
+  background-color: black;
+}
+main {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  color-scheme: dark;
+  background: radial-gradient(92.19% 89.74% at 32.27% 91.27%, rgba(31, 169, 17, 0.81) 17.21%, #2f15d0 64.58%, rgba(0, 0, 0, 0) 100%);
+}
+.notificationMainText {
+  color: var(--Background---F2F2F2, #f2f2f2);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  width: 313px;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.notificationSubText {
+  color: var(--Background---F2F2F2, #f2f2f2);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.7;
+  width: 322px;
+  line-height: 120%;
+}
+.notificationCard {
+  border-radius: 8.4px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 27.5%, rgba(22, 93, 255, 0.16) 157.71%), #fff;
+  box-shadow: 0px 0.7px 0.7px 0px rgba(0, 0, 0, 0.04), 0px 2.8px 7px 0px rgba(0, 0, 0, 0.04);
+  width: 189.7px;
+  min-width: 189.7px;
+  height: 171.5px;
+  padding: 14px;
+}
+.recommendationCohortIamge {
+  border-radius: 12px;
+  border: 1.5px solid rgba(255, 255, 255, 0.68);
+  box-shadow: 0px 14px 64px -4px rgba(24, 39, 75, 0.12), 0px 8px 22px -6px rgba(24, 39, 75, 0.12);
+}
+.recommendationExtraInfo {
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+}
+.testimonialDivider {
+  border-bottom: 1px solid rgba(229, 229, 230, 0.7);
+  width: 100%;
+  height: 1px;
+  /* max-width: 639px; */
+}
+.testimonialCardMain {
+  display: flex;
+  width: 100%;
+  /* min-width: 353px; */
+  max-width: 530px;
+  padding: 20px;
+  flex-direction: column;
+  height: 136px;
+  align-items: flex-start;
+  border-radius: 12px;
+  background: var(--White, #fff);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.04), 0px 4px 10px 0px rgba(0, 0, 0, 0.04);
+  gap: 20px;
+}
+
+.testimonialCardMain > h4 {
+  color: var(--grey-900, #19191a);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.testimonialCardMain > h4 > span {
+  color: var(--grey-400, #96979a);
+  font-size: 13px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+.testimonialCardMain > p {
+  color: var(--text-5, #1d2129);
+  font-family: Inter;
+  overflow: hidden;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+.testimonialCardWrapper {
+  width: 100%;
+  overflow: scroll;
+  scrollbar-width: none;
+  position: relative;
+  padding: 5px;
+  padding-right: 20px;
+}
+.testimonialCardInnerWrapper {
+  width: max-content;
+  min-width: 100%;
+}
+
+.testimonialCardWrapper > div {
+  overflow: hidden;
+  gap: 20px;
+  display: flex;
+}
+.testimonialCardWrapper::-webkit-scrollbar {
+  display: none;
+}
+.notificationCheckbox {
+  width: 14px;
+  height: 14px;
+  border-radius: 4.2px;
+  background: var(--blue-blue, #0071e3);
+}
+.notificationEmailSaveButton {
+  color: var(--grey-900, #19191a);
+  font-family: Inter;
+  font-size: 9.1px;
+  height: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.inputEmailOnSave {
+  border-radius: 5.6px;
+  border: 0.7px solid var(--neutral-300, #d4d4d4);
+  background: #fff;
+  display: flex;
+  color: black;
+  width: 161.7px;
+  height: 35px;
+  padding: 8.4px 11.2px;
+  align-items: center;
+  gap: 7px;
+}
+.notificationCardText {
+  color: var(--grey-900, #19191a);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+}
+.notificationCardDropdownText {
+  color: var(--grey-900, #19191a);
+  font-family: Inter;
+  font-size: 11.2px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 13.44px */
+}
+select.notficationInputDropdown {
+  border-radius: 2.8px;
+  background: var(--grey-50, rgba(229, 229, 230, 0.5));
+  display: inline-flex;
+  padding: 4.2px;
+  align-items: flex-start;
+  gap: 2.8px;
+  color: var(--grey-800, #313233);
+  font-family: Inter;
+  font-size: 9.1px;
+  font-style: normal;
+  font-weight: 500;
+  width: 69px;
+  line-height: 120%; /* 10.92px */
+  /* width: 100%; */
+  height: max-content;
+  color: black;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='--grey-900' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+  /* background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"); */
+}
+
+p.notficationInputDropdown.Clock {
+  width: 140px;
+}
+/* .marqueescroll {
+  animation: cssmarquee 10s alternate infinite;
+}
+
+@keyframes cssmarquee {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
+.question-icon {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  background-color: teal;
+  border: 1px solid white;
+  font-size: 100%;
+  margin: auto;
+  z-index: 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  height: 50px;
+}
+.modal {
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  min-width: 50vw;
+  max-width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 14px 64px -4px rgba(24, 39, 75, 1.12), 0px 8px 22px -6px rgba(24, 39, 75, 1.12);
+  background: white;
+  right: 0px;
+}
+.modalTitleText {
+  color: var(--grey-300, #b0b1b3);
+  width: 320px;
+  font-family: Inter;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 46.8px */
+}
+.modalCloseButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 30px;
+  background-color: teal;
+  border: 1px solid white;
+  color: white;
+  aspect-ratio: 1/1;
+}
+.ModalEmailInput {
+  display: flex;
+  width: 340px;
+  padding: 20px 24px;
+  align-items: center;
+  color: black;
+  border-radius: 8px;
+  border: 1px solid var(--grey-100, #e5e5e6);
+  background: #fff;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.04), 0px 4px 10px 0px rgba(0, 0, 0, 0.04);
+}
+.ModalEmailInput::placeholder {
+  color: grey;
+}
+
+.modalSubmitButton {
+  display: flex;
+  width: 340px;
+  height: 59px;
+  padding: 18px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid var(--grey-900, #19191a);
+  background: var(--grey-900, #19191a);
+}
+.modalSubmitExtraTag {
+  display: inline-flex;
+  padding: 18px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  color: var(--grey-900, #19191a);
+  text-align: center;
+
+  font-family: Inter;
+  font-size: 15px;
+  width: 365px;
+  text-wrap: balance;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+}
+@media (max-width: 400px) {
+  .modalSubmitExtraTag {
+    font-size: 14px;
+  }
+}
