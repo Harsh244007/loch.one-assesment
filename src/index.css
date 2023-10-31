@@ -116,11 +116,13 @@ main {
 .testimonialCardInnerWrapper {
   width: max-content;
   min-width: 100%;
+  overflow: hidden;
 }
 
 .testimonialCardWrapper > div {
-  overflow: hidden;
   gap: 20px;
+  overflow: auto;
+  padding-bottom: 10px;
   display: flex;
 }
 .testimonialCardWrapper::-webkit-scrollbar {
