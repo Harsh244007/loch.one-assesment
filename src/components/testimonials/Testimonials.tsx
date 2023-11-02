@@ -2,7 +2,7 @@ import { ImagesConfigType, TestimonialCardPropsType, TestimonialFooterPropsType 
 import TestimonialsMainIcon from "../../assets/testimonial/logo.svg";
 import { CommonImageCached } from "../common/CommonFn";
 const TestimonialsMain = () => {
-  const TestimonialMainIconConfig: ImagesConfigType = { src: TestimonialsMainIcon, alt: "Loch Logo", height: 60, width: 60 };
+  const TestimonialMainIconConfig: ImagesConfigType = { src: TestimonialsMainIcon, alt: "Loch Logo", height: 60, width: 60,className:"lg:mb-5" };
 
   const TestimonialsMainJSON = {
     divClassName: {

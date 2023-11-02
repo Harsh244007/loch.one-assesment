@@ -12,7 +12,7 @@ const NotificationMain = () => {
     },
   };
   return (
-    <section className="flex justify-evenly gap-5 items-center flex-col lg:flex-row">
+    <section className="flex justify-between gap-5 items-center flex-col lg:flex-row lg:ml-40">
       <NotificationRightSide
         imagesCofig={NOTIFCATIONJSON.IMAGECONFIG}
         mainText={NOTIFCATIONJSON.NOTIFICATIONMAINTEXT}

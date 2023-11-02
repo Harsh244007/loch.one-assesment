@@ -16,7 +16,7 @@ const RecommendationMain = () => {
   const RecommendationMainJSON = {
     heroImage: HeroCohortImageConfig,
     ExtraInfo: {
-      className: "recommendationExtraInfo",
+      className: "recommendationExtraInfo lg:mr-5 xl:mr-24",
       Icon: EyeIconImageConfig,
       mainText: { text: "Watch what the whales are doing", className: "notificationMainText" },
       subText: {
@@ -26,7 +26,7 @@ const RecommendationMain = () => {
     },
   };
   return (
-    <section className="flex justify-evenly items-center gap-5 flex-col-reverse lg:flex-row">
+    <section className="flex justify-between items-center gap-5 flex-col-reverse lg:flex-row lg:ml-40">
       <CommonImageCached Icon={RecommendationMainJSON.heroImage} />
       <NotificationRightSide
         className={RecommendationMainJSON.ExtraInfo.className}
